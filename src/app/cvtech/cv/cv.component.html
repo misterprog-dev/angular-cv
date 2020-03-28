@@ -1,0 +1,8 @@
+<div class="row mt-5">
+  <div class="col-md-6 col-sm-3">
+    <app-listecv (selectedPersonne)="selectPerson($event)" [personnes]="personnes"></app-listecv>
+  </div>
+  <div class="col-md-6 col-sm-9">
+    <app-detail-cv [personne]="selectedPersonne"></app-detail-cv>
+  </div>
+</div>

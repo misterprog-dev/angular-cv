@@ -1,0 +1,44 @@
+<div class="container mt-3">
+  <div class="offset-1 col-md-9 col-sm-9">
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+          <div class="cover">
+            <img src="assets/images/rotating_card_thumb2.png">
+          </div>
+          <div class="user">
+            <img class="img-circle" src="assets/images/{{personne.path}}">
+          </div>
+          <div class="content">
+            <div class="main">
+              <h3 class="name">{{personne.firstName}} {{personne.lastName}}</h3>
+              <p class="profession">{{personne.job}}</p>
+              <p class="text-center">Ce homme est âgé de {{personne.age}} ans et il a été l'un des révolutionaire de son époque ! </p>
+            </div>
+            <div class="footer">
+              <i class="fa fa-mail-forward"></i> Auto Rotation
+            </div>
+          </div>
+        </div> <!-- end front panel -->
+        <div class="back">
+          <div class="header">
+            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+          </div>
+          <div class="content">
+            <div class="main">
+              <h4 class="text-center">Job Description</h4>
+              <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="social-links text-center">
+              <button class="btn btn-success btn-block" (click)="embaucher()" ><i class="fa fa-plus"></i>Embaucher</button>
+              <button class="btn btn-danger btn-block" (click)="debaucher()" ><i class="fa fa-minus"></i>Débaucher</button>
+              <button class="btn btn-danger btn-block" (click)="deletePersonne()" ><i class="fa fa-remove"></i>Supprimer cette personne</button>
+            </div>
+          </div>
+        </div> <!-- end back panel -->
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+  </div>
+</div>

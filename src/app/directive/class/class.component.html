@@ -1,0 +1,19 @@
+<p [ngClass]="{'est':est, 'barca':barca, 'milan':milan}">
+  class works!
+</p>
+
+<button class="btn btn-primary" (click)="changeEquipe()">Esperance</button>
+
+<div appHighlight>
+  Bonjour
+</div>
+
+<input appRainbow type="text" class="form-control" *ngIf="show">
+
+<button class="btn btn-primary" (click)="show = !show">changer Visibilite</button>
+
+<!--<button class="btn btn-secondary" (click)="show = !show">changer</button> -->
+
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let item of equipe">{{ item | uppercase}}</li>
+</ol>

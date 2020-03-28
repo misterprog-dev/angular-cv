@@ -1,0 +1,10 @@
+<div  *ngIf="personnes">
+  <div class="card text-white bg-success mb-3" style="max-width: 20rem;" *ngFor="let personne of personnes">
+    <div class="card-body">
+      <p class="card-text">
+        <img class="rounded-circle" src="assets/images/{{personne.path}}" width="200px" height="200px" alt="{{personne.firstName}}"/>
+        {{personne.firstName}} {{personne.lastName}}
+      </p>
+    </div>
+  </div>
+</div>

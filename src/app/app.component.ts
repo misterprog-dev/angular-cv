@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'forma';
+  title = 'This is my first';
+  bgcolor = 'yellow';
+  show = false;
+
+  changeStatus() {
+    this.show = this.show == true ? false:true ;
+  }
+
 }
